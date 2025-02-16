@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant/Cafe Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src=https://maps.app.goo.gl/ZU3gDn1P82FiuCKC6></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+    <div class="hero-image">
+        <h1>Welcome to "HOUSE OF MORI"</h1>
+        <p>Your favorite place to eat, drink, and relax.</p>
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="https://www.sharmispassions.com/wp-content/uploads/2012/02/VenPongal6.jpg" alt="Dish 1">
+            <h3>Dish 1</h3>
+            <p>A delicious description of Dish 1</p>.<p>1/2 cup raw rice</p>
+              <p>1/4 cup split moong dal</p>
+              <p>3 cups water</p>
+             <p> 10 nos cashews</p>
+              <p>salt ( to taste)</p>
+
+            </p>
+            <p class="price">$12.99</p>
+        </div>
+        <div class="menu-item">
+            <img src= "https://storage.googleapis.com/goraka-prod/Narasapuram/Tasty%20Bites%20Biryani%20/Ragi%20Sangati%20with%20Chicken%20Curry/1659497449"alt="Dish 2">
+            <h3>Dish 2</h3>
+            <p>A delicious description of Dish 2.</p>
+            <p>3 bowls of samooh
+              <p>1 leg piece of chicken</p>
+              <p>1 bowl of chicken curry</p>
+            </p>
+            <p class="price">$15.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.halfbakedharvest.com/wp-content/uploads/2021/05/Spicy-Beer-BBQ-Chicken-Skewers-with-Avocado-Corn-and-Feta-Salsa-1.jpg" alt="Dish 3">
+            <h3>Dish 3</h3>
+            <p>A delicious description of Dish 3.</p>
+            <p>Spicy-Beer-BBQ-Chicken-Skewers-with-Avocado-Corn-and-Feta-Salsa-1</p>
+            <p>2 teaspoons dijon mustard</p>
+              <p>2 teaspoons Worcestershire sauce
+              </p>
+            <p class="price">$10.99</p>
+        </div>
+    </div>
+</section>
+
+<!-- Reservation Section -->
+<section id="reservation">
+    <h2>Reserve a Table</h2>
+    <form action="submit_reservation.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<!-- Location Section with Google Maps Embed -->
+<section id="location">
+    <h2>Find Us</h2>
+    <div class="location-details">
+        <p><strong>Address:</strong> Near nakshatra van garden, naroli road,silvassa</p>
+        <p><strong>Phone:</strong> +91 9876546578</p>
+        <p><strong>Hours:</strong> Mon-Sun: 8:00 AM - 10:00 PM</p>
+    </div>
+    
+    <div id="map" style="width:100%;height:400px;"></div>
+    
+    <script>
+            function initMap() {
+                var restaurantLocation = {lat: 20.271366, lng: 73.028528}; // House of Mori's coordinates in Silvassa
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: restaurantLocation
+                });
+                var marker = new google.maps.Marker({
+                    position: restaurantLocation,
+                    map: map,
+                    title: 'House of Mori'
+                });
+            }
+    
+            window.onload = initMap;
+        </script>
+
+
+  
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+        <p>"The food was amazing and the service was top-notch! Highly recommend!"</p>
+        <p>- John Doe</p>
+    </div>
+    <div class="testimonial">
+        <p>"A cozy atmosphere with great coffee. Will be back soon!"</p>
+        <p>- Jane Smith</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 HOUSE OF MORI . All Rights Reserved.</p>
+    <p>Contact us at: info@ourrestaurant.com</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="home">
+            <img src="C:\Users\patra\OneDrive\Pictures\Saved Pictures\Snapchat-394369998.jpg" alt="ipshita patra"width="250"height="400" >
+            <h1>Hello, I'm Ipshita Patra</h1>
+            <p>I am a student of btech cse specialization in ai&ds, passionate about data science. I specialize in html and css.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <!-- Example project 1 -->
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>restaurant and cafe website</h3>
+                    <p>a website of a restaurant containing menu,booking reservation.location,customer review.</p>
+                    <a href="https://link-to-project.com" target="_blank">View Project</a>
+                </div>
+                <!-- Example project 2 -->
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>travel website</h3>
+                    <p>A travel wesite containing destination,packages,testimonials,contact.</p>
+                    <a href="https://link-to-project.com" target="_blank">View Project</a>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>c programming</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Project Management</li>
+            </ul>
+            <!-- Skills Chart (you can use a chart library like Chart.js if you prefer) -->
+            <div class="skills-chart">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="skill-bar" style="width: 90%"></div>
+                </div>
+                <div class="skill">
+                    <p>css</p>
+                    <div class="skill-bar" style="width: 80%"></div>
+                </div>
+                <!-- Add more skills here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Or connect with me on social media:</p>
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/ipshita.?igsh=Nm5mbjh1enZlbzdx" target="_blank">instagram</a></li>
+                <li><a href="https://github.com/ipshita67" target="_blank">GitHub</a></li>
+                <!-- Add more social links if needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
